@@ -8,7 +8,7 @@ function LunchCheckController ($scope,$filter) {
     $scope.checkLaunch = function() {
         if($scope.listForLunch){
         console.log($scope.$listForLunch);
-        var list = $scope.listForLunch.split(",",10);
+        var list = $scope.listForLunch.split(",");
         if(list.length<4){ $scope.message = "Enjoy!"}
         else {$scope.message = "Too much!";}
         }
